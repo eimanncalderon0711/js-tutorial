@@ -28,3 +28,5 @@ const books = [
     }
 ]
 
+console.log(books[0]);
+console.log(books[1]);
