@@ -59,6 +59,5 @@ const movies = [
 
 // arrayname.map(() => {});
 movies.map(function(movie) {
-    console.log(movie)
+    console.log("My movie: " + movie['title'])
 });
-    
