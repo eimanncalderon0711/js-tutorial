@@ -13,6 +13,18 @@ const car = {
 }
 
 
+const {age: personAge, name: fullname, status, favoriteColor} = person;
+
+console.log(`Persone Name: ${fullname}`);
+console.log(`Age: ${age}`)
+
+const {manufacturer, model, year, color} = car;
+console.log(`Car Manufacturer: ${manufacturer}`);
+console.log(`Model: ${model}`);
+console.log(`Year: ${year}`);
+console.log(`Color: ${color}`);
+
+
 const books = [
     {
         title: 'The Great Gatsby',
