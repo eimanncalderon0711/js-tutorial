@@ -56,6 +56,6 @@ const movies = [
 // Movie2 - The Shawshank Redemption, directed by Frank Darabont, released in 1994, Genre: Drama
  // Movie3 - The Godfather, directed by Francis Ford Coppola, released in 1972, Genre: Crime
 
-movies.forEach((movie, index) => {
+movies.map((movie, index) => {
     console.log(`Movie${index + 1} - ${movie.title}, directed by ${movie.director}, released in ${movie.year}, Genre: ${movie.genre}`);
 });
