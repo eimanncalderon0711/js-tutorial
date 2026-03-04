@@ -1,28 +1,28 @@
-const person = {
-    name: 'John Doe',
-    age: 30,
-    status: 'single',
-    favoriteColor: 'blue'
-}
+// const person = {
+//     name: 'John Doe',
+//     age: 30,
+//     status: 'single',
+//     favoriteColor: 'blue'
+// }
 
-const car = {
-    manufacturer: 'Toyota',
-    model: 'Camry',
-    year: 2020,
-    color: 'red'
-}
+// const car = {
+//     manufacturer: 'Toyota',
+//     model: 'Camry',
+//     year: 2020,
+//     color: 'red'
+// }
 
 
-const {age: personAge, name: fullname, status, favoriteColor} = person;
+// const {age: personAge, name: fullname, status, favoriteColor} = person;
 
-console.log(`Persone Name: ${fullname}`);
-console.log(`Age: ${age}`)
+// console.log(`Persone Name: ${fullname}`);
+// console.log(`Age: ${age}`)
 
-const {manufacturer, model, year, color} = car;
-console.log(`Car Manufacturer: ${manufacturer}`);
-console.log(`Model: ${model}`);
-console.log(`Year: ${year}`);
-console.log(`Color: ${color}`);
+// const {manufacturer, model, year, color} = car;
+// console.log(`Car Manufacturer: ${manufacturer}`);
+// console.log(`Model: ${model}`);
+// console.log(`Year: ${year}`);
+// console.log(`Color: ${color}`);
 
 
 const books = [
@@ -44,13 +44,13 @@ const movies = [
     {
         title: 'Inception',
         director: 'Christopher Nolan',
-        year: 2010,
+        year: 2026,
         genre: 'Science Fiction'
     },
     {
         title: 'The Shawshank Redemption',
         director: 'Frank Darabont',
-        year: 1994,
+        year: 2026,
         genre: 'Drama'
     },
     {
@@ -60,6 +60,20 @@ const movies = [
         genre: 'Crime'
     }
 ]
+
+const filterLatestMovie = movies.filter((movie) => {
+    return movies ? movie : 'No movies found';
+});
+
+
+filterLatestMovie.map((movie) => {
+    console.log(`${movie.title} - ${movie.director}, released in ${movie.year}, Genre: ${movie.genre}`);
+})
+
+
+findLatestOldestMovie = movies.find((movie) => {
+    return movie.title === "The Shawshank Redemption";
+});
 
 
 
