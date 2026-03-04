@@ -58,6 +58,8 @@ const movies = [
 
 
 // arrayname.map(() => {});
-movies.map(function(movie) {
-    console.log("My movie: " + movie['title'])
-});
+movies.map(function(movie, index) {
+    console.log(
+        `Movie${index + 1} - ${movie.title}, directed by ${movie.director}, released in ${movie.year}, Genre: ${movie.genre}`
+    )
+})
