@@ -28,3 +28,33 @@ const books = [
     }
 ]
 
+const movies = [
+    {
+        title: 'Inception',
+        director: 'Christopher Nolan',
+        year: 2010,
+        genre: 'Science Fiction'
+    },
+    {
+        title: 'The Shawshank Redemption',
+        director: 'Frank Darabont',
+        year: 1994,
+        genre: 'Drama'
+    },
+    {
+        title: 'The Godfather',
+        director: 'Francis Ford Coppola',
+        year: 1972,
+        genre: 'Crime'
+    }
+]
+
+
+
+// Expected Output:
+// Movie1 - Inception, directed by Christopher Nolan, released in 2010, Genre: Science Fiction
+// Movie2 - The Shawshank Redemption, directed by Frank Darabont, released in 1994, Genre: Drama
+// Movie3 - The Godfather, directed by Francis Ford Coppola, released in 1972, Genre: Crime
+
+
+// arrayname.map(() => {});
