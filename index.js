@@ -27,6 +27,39 @@ const books = [
         genre: 'Novel'
     }
 ]
-
+HEAD
 console.log(books[0]);
 console.log(books[1]);
+const movies = [
+    {
+        title: 'Inception',
+        director: 'Christopher Nolan',
+        year: 2010,
+        genre: 'Science Fiction'
+    },
+    {
+        title: 'The Shawshank Redemption',
+        director: 'Frank Darabont',
+        year: 1994,
+        genre: 'Drama'
+    },
+    {
+        title: 'The Godfather',
+        director: 'Francis Ford Coppola',
+        year: 1972,
+        genre: 'Crime'
+    }
+]
+
+movies.forEach((movie, index) => {
+     console.log(`Movie${index + 1} - ${movie.title}, director: ${movie.director}, released in ${movie.year}, Genre: ${movie.genre}`);
+});
+
+
+// Expected Output:
+// Movie1 - Inception, directed by Christopher Nolan, released in 2010, Genre: Science Fiction
+// Movie2 - The Shawshank Redemption, directed by Frank Darabont, released in 1994, Genre: Drama
+// Movie3 - The Godfather, directed by Francis Ford Coppola, released in 1972, Genre: Crime
+
+
+// arrayname.map(() => {});01c4283981921c19ba6f18358b304bd548fa661e
